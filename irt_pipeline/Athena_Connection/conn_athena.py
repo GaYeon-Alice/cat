@@ -7,7 +7,7 @@ logger = setup_logging()
 
 def connect_to_athena():
     try:
-        awsid =os.getenv('aws_access_key_id')
+        awsid = os.getenv('aws_access_key_id')
         awspassword = os.getenv('aws_secret_access_key')
         
         conn = connect(aws_access_key_id=awsid,
